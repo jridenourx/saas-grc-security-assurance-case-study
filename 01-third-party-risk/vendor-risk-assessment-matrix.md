@@ -17,9 +17,9 @@ Each vendor receives a score from 1 to 5 for four inherent-risk factors.
 | Business criticality                  |    25% |
 | External dependency and concentration |    20% |
 
-**Calculation:**
+### Calculation
 
-Inherent Risk Score = (Data Sensitivity × 0.30) + (System Access × 0.25) + (Business Criticality × 0.25) + (Dependency and Concentration × 0.20)
+**Inherent Risk Score = (Data Sensitivity × 0.30) + (System Access × 0.25) + (Business Criticality × 0.25) + (Dependency and Concentration × 0.20)**
 
 Risk tiers:
 
@@ -29,13 +29,41 @@ Risk tiers:
 
 The score is rounded to two decimal places for reporting.
 
+These thresholds are proposed for this simulated case study and are not universal industry standards.
+
 ## 3. Preliminary Vendor Ratings
 
 | Vendor ID | Vendor                  | Data Sensitivity (30%) | System Access (25%) | Business Criticality (25%) | Dependency (20%) | Weighted Score | Preliminary Tier |
 | --------- | ----------------------- | ---------------------: | ------------------: | -------------------------: | ---------------: | -------------: | ---------------- |
 | VND-001   | Northstar Cloud Hosting |                      5 |                   4 |                          5 |                5 |           4.75 | High             |
-| VND-002   | SignalBridge Support    |                      4 |                   3 |                          3 |                3 |           3.35 | Moderate         |
+| VND-002   | SignalBridge Support    |                      4 |                   3 |                          3 |                3 |           3.30 | Moderate         |
 | VND-003   | MetricForge Analytics   |                      3 |                   3 |                          2 |                2 |           2.55 | Moderate         |
+
+### Calculation Verification
+
+**VND-001 — Northstar Cloud Hosting**
+
+(5 × 0.30) + (4 × 0.25) + (5 × 0.25) + (5 × 0.20)
+
+= 1.50 + 1.00 + 1.25 + 1.00
+
+= **4.75 — High**
+
+**VND-002 — SignalBridge Support**
+
+(4 × 0.30) + (3 × 0.25) + (3 × 0.25) + (3 × 0.20)
+
+= 1.20 + 0.75 + 0.75 + 0.60
+
+= **3.30 — Moderate**
+
+**VND-003 — MetricForge Analytics**
+
+(3 × 0.30) + (3 × 0.25) + (2 × 0.25) + (2 × 0.20)
+
+= 0.90 + 0.75 + 0.50 + 0.40
+
+= **2.55 — Moderate**
 
 ## 4. Scoring Rationale
 
@@ -54,7 +82,7 @@ The score is rounded to two decimal places for reporting.
 
 ### VND-002 — SignalBridge Support
 
-**Preliminary score: 3.35 — Moderate**
+**Preliminary score: 3.30 — Moderate**
 
 * **Data sensitivity: 4.** The service may process customer account information and support records. The extent of access to customer business records needs confirmation.
 * **System access: 3.** Support personnel may access customer information through assigned permissions. The actual permissions and integration scope have not been validated.
@@ -107,10 +135,15 @@ Risk scores and tiers should be reviewed when:
 * A contract or service changes materially.
 * A previously identified risk is remediated or accepted.
 
+A reassessment should document the reason for the change, the revised factor scores where applicable, the recalculated weighted score, the resulting tier, and any required approval or risk treatment.
+
 ## 7. Limitations and Next Steps
 
 These are preliminary inherent-risk ratings. They do not represent residual risk and do not establish that any vendor has passed or failed a security assessment.
 
-The next assessment steps are to collect synthetic due diligence evidence, evaluate vendor responses, document evidence limitations, identify findings, and determine whether the initial ratings require revision.
+The next assessment steps are to collect synthetic due diligence evidence, evaluate vendor responses, document evidence limitations, identify supported findings, and determine whether the initial ratings require revision.
+
+The numerical score should be retained as a preliminary assessment until the relevant evidence has been reviewed. Any subsequent tier change should include a documented rationale.
 
 All vendor profiles and scores are fictional and intended solely for this portfolio case study.
+
