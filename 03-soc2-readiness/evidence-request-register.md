@@ -10,6 +10,8 @@ It supports evidence collection, accountability, review, and traceability betwee
 
 A request being listed in this register does not mean the evidence has been provided or reviewed.
 
+**Portfolio-sample distinction:** The synthetic artifacts in `evidence-samples.md` were drafted for this portfolio exercise. They do not mean that evidence requests were issued to a real or fictional production owner, or that production evidence was received. Therefore, the request statuses below remain **Not Requested** unless a request was explicitly issued within the simulation. The separate assessment-results register records six controls as In Progress because preliminary samples have been drafted; that status does not change the request status or establish completed testing.
+
 ## 2. Evidence Status Definitions
 
 | Status         | Definition                                                                                           |
@@ -132,8 +134,11 @@ Synthetic evidence can demonstrate assessment methodology but cannot substantiat
 
 At the time this register is created, all requests are planned and remain **Not Requested**.
 
-Statuses should be updated as each artifact is created, collected, reviewed, and evaluated. Evidence should not be marked accepted merely because the file exists.
+Statuses should be updated as each artifact is created, collected, reviewed, and evaluated. Evidence should not be marked Accepted merely because the file exists.
+
+The existence of a synthetic sample in `evidence-samples.md` does not change the request status. The register should reflect whether a request was issued within the simulation, separately from whether a sample was drafted for portfolio demonstration.
 
 ## 9. Simulation Disclaimer
 
 This register is a proposed evidence-management artifact for a fictional SaaS provider. It does not establish that the listed evidence exists in a real organization or that any control has been tested or found effective.
+
