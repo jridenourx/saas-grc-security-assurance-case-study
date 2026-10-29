@@ -6,7 +6,7 @@ This register documents exceptions identified during the simulated SOC 2 readine
 
 It provides a consistent record of control gaps, supporting evidence, risk implications, severity, ownership, and remediation status. Each finding must be traceable to the relevant control, test procedure, evidence, and risk where applicable.
 
-**Assessment status:** Pending testing
+**Assessment status:** Pending testing  
 **Current finding status:** No findings documented yet
 
 No finding should be recorded as confirmed until the available evidence has been reviewed and the exception has been evaluated. Illustrative examples, if added later, must be explicitly labeled as illustrative rather than actual assessment results.
@@ -17,13 +17,13 @@ Assign each confirmed finding a unique identifier using the format `FND-001`, `F
 
 ### Finding severity
 
-| Severity    | Definition                                                                                                                                           | General response expectation                                                      |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Critical    | A significant control failure creates an immediate or potentially severe risk to sensitive data, critical systems, or essential security operations. | Escalate immediately; establish containment and an urgent corrective-action plan. |
-| High        | A material control weakness creates substantial risk or affects an important security requirement.                                                   | Prioritize remediation and obtain management visibility.                          |
-| Moderate    | A control weakness increases risk but has a more limited scope or impact.                                                                            | Assign an owner, document corrective action, and track to completion.             |
-| Low         | A limited weakness or documentation deficiency with comparatively low risk.                                                                          | Correct through routine improvement activities.                                   |
-| Observation | An improvement opportunity or process concern that does not currently meet the threshold for a control finding.                                      | Document and evaluate for improvement.                                            |
+| Severity | Definition | General response expectation |
+|---|---|---|
+| Critical | A significant control failure creates an immediate or potentially severe risk to sensitive data, critical systems, or essential security operations. | Escalate immediately; establish containment and an urgent corrective-action plan. |
+| High | A material control weakness creates substantial risk or affects an important security requirement. | Prioritize remediation and obtain management visibility. |
+| Moderate | A control weakness increases risk but has a more limited scope or impact. | Assign an owner, document corrective action, and track to completion. |
+| Low | A limited weakness or documentation deficiency with comparatively low risk. | Correct through routine improvement activities. |
+| Observation | An improvement opportunity or process concern that does not currently meet the threshold for a control finding. | Document and evaluate for improvement. |
 
 Severity must reflect the evidence, potential impact, likelihood, scope, and effectiveness of existing safeguards. These categories are proposed internal conventions for this case study, not universal SOC 2 severity requirements.
 
@@ -31,25 +31,25 @@ Severity must reflect the evidence, potential impact, likelihood, scope, and eff
 
 Before confirming a finding, document:
 
-* The control ID and control objective.
-* The test procedure and test period.
-* The evidence reviewed, including evidence IDs.
-* The condition observed.
-* The expected control requirement or acceptance criterion.
-* The gap between the expected and observed conditions.
-* The risk and potential business impact.
-* The cause, if it can be supported by evidence.
-* Any compensating controls considered.
-* The proposed severity and rationale.
-* The responsible owner and required corrective action.
+- The control ID and control objective.
+- The test procedure and test period.
+- The evidence reviewed, including evidence IDs.
+- The condition observed.
+- The expected control requirement or acceptance criterion.
+- The gap between the expected and observed conditions.
+- The risk and potential business impact.
+- The cause, if it can be supported by evidence.
+- Any compensating controls considered.
+- The proposed severity and rationale.
+- The responsible owner and required corrective action.
 
 Distinguish among these exception types:
 
-* **Design weakness:** The control is absent or is not adequately designed to address the risk.
-* **Operating failure:** The control is designed appropriately but did not operate as intended.
-* **Evidence gap:** Available documentation is insufficient to demonstrate that the control is appropriately designed or operating. An evidence gap alone does not prove the control failed.
-* **Scope or applicability issue:** The control or test population requires clarification before a conclusion can be reached.
-* **Observation:** An improvement opportunity that does not currently meet the threshold for a formal finding.
+- **Design weakness:** The control is absent or is not adequately designed to address the risk.
+- **Operating failure:** The control is designed appropriately but did not operate as intended.
+- **Evidence gap:** Available documentation is insufficient to demonstrate that the control is appropriately designed or operating. An evidence gap alone does not prove the control failed.
+- **Scope or applicability issue:** The control or test population requires clarification before a conclusion can be reached.
+- **Observation:** An improvement opportunity that does not currently meet the threshold for a formal finding.
 
 An evidence gap may warrant a separate finding when the evidence requirement itself is part of the control objective or when the lack of evidence prevents the organization from demonstrating that a required control operates effectively. Any such finding must be supported by the applicable requirement and documented evaluation; missing evidence must not automatically be treated as proof of control failure.
 
@@ -67,15 +67,15 @@ The row above is an initialization placeholder, not a finding. Replace it when a
 
 ## 5. Finding Status Definitions
 
-| Status                  | Definition                                                                                                       |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Pending testing         | Testing has not yet produced an evaluated exception.                                                             |
-| Draft                   | A potential finding is being documented and evaluated.                                                           |
-| Open                    | The finding has been confirmed and requires action.                                                              |
-| Remediation in progress | Corrective action is underway.                                                                                   |
-| Pending validation      | The owner reports completion and independent or designated validation is required.                               |
-| Closed                  | The corrective action has been validated against defined acceptance criteria.                                    |
-| Risk accepted           | An authorized decision-maker has formally accepted the residual risk, with rationale and review date documented. |
+| Status | Definition |
+|---|---|
+| Pending testing | Testing has not yet produced an evaluated exception. |
+| Draft | A potential finding is being documented and evaluated. |
+| Open | The finding has been confirmed and requires action. |
+| Remediation in progress | Corrective action is underway. |
+| Pending validation | The owner reports completion and independent or designated validation is required. |
+| Closed | The corrective action has been validated against defined acceptance criteria. |
+| Risk accepted | An authorized decision-maker has formally accepted the residual risk, with rationale and review date documented. |
 
 A finding must not be marked **Closed** solely because an owner reports that work is complete. Validation evidence and the result must be recorded.
 
@@ -104,12 +104,12 @@ The person validating remediation should be sufficiently independent of the pers
 
 Readiness reporting should summarize:
 
-* Total confirmed findings by severity.
-* Findings by control and exception type.
-* Open, overdue, and risk-accepted findings.
-* Remediation progress and upcoming target dates.
-* Evidence limitations affecting conclusions.
-* Significant risks requiring management attention.
+- Total confirmed findings by severity.
+- Findings by control and exception type.
+- Open, overdue, and risk-accepted findings.
+- Remediation progress and upcoming target dates.
+- Evidence limitations affecting conclusions.
+- Significant risks requiring management attention.
 
 Critical or high-risk issues should be escalated promptly to the designated security or management owner. The escalation and decision should be documented.
 
@@ -117,12 +117,12 @@ Do not count the initialization placeholder as a finding in metrics or managemen
 
 ## 8. Relationship to Other Project Artifacts
 
-| Artifact                                         | Relationship                                                              |
-| ------------------------------------------------ | ------------------------------------------------------------------------- |
-| `control-matrix.md`                              | Identifies the control and objective associated with the finding.         |
-| `evidence-request-register.md`                   | Tracks evidence requested or received for the assessment.                 |
-| `control-testing-plan.md`                        | Defines the planned test procedures and expected results.                 |
-| `remediation-tracker.md`                         | Tracks corrective actions associated with confirmed findings.             |
+| Artifact | Relationship |
+|---|---|
+| `control-matrix.md` | Identifies the control and objective associated with the finding. |
+| `evidence-request-register.md` | Tracks evidence requested or received for the assessment. |
+| `control-testing-plan.md` | Defines the planned test procedures and expected results. |
+| `remediation-tracker.md` | Tracks corrective actions associated with confirmed findings. |
 | Risk register in the third-party risk workstream | Supports linkage to broader business and security risks where applicable. |
 
 Use the identifiers and terminology defined in the relevant source registers. Before recording a cross-reference, confirm that the referenced control, test, evidence item, risk, or remediation action exists and is applicable. Do not create a reference merely to make the register appear complete.
