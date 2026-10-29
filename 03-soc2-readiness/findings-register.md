@@ -51,6 +51,8 @@ Distinguish among these exception types:
 * **Scope or applicability issue:** The control or test population requires clarification before a conclusion can be reached.
 * **Observation:** An improvement opportunity that does not currently meet the threshold for a formal finding.
 
+An evidence gap may warrant a separate finding when the evidence requirement itself is part of the control objective or when the lack of evidence prevents the organization from demonstrating that a required control operates effectively. Any such finding must be supported by the applicable requirement and documented evaluation; missing evidence must not automatically be treated as proof of control failure.
+
 If evidence is unavailable, contradictory, incomplete, or outside the assessment period, document the limitation rather than assuming the control passed or failed.
 
 ## 4. Findings Register
@@ -58,10 +60,10 @@ If evidence is unavailable, contradictory, incomplete, or outside the assessment
 No findings have been entered at project initialization. Populate this table after control testing and exception evaluation.
 
 | Finding ID | Finding Title | Control ID | Test ID | Exception Type | Severity | Condition and Supporting Evidence | Risk / Impact | Root Cause | Compensating Controls | Owner | Target Date | Status | Remediation Action ID |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| No findings documented yet | — | — | — | — | — | Pending assessment | — | — | — | — | — | Pending testing | — |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| — | No finding recorded | — | — | — | — | No confirmed findings at initialization | — | — | — | — | — | Not applicable | — |
 
-Replace the initialization row when actual assessment results are documented. Do not treat it as a finding.
+The row above is an initialization placeholder, not a finding. Replace it when actual assessment results are documented. Do not assign a finding ID or remediation action ID until a finding has been established and the corresponding action has been created, where applicable.
 
 ## 5. Finding Status Definitions
 
@@ -78,6 +80,8 @@ Replace the initialization row when actual assessment results are documented. Do
 A finding must not be marked **Closed** solely because an owner reports that work is complete. Validation evidence and the result must be recorded.
 
 Risk acceptance does not mean the control weakness has been corrected. Keep accepted-risk items distinguishable from remediated findings.
+
+The `Pending testing` status describes the overall assessment state or a potential exception that has not yet been evaluated. It should not be assigned to an actual confirmed finding that already requires remediation.
 
 ## 6. Remediation and Validation
 
@@ -109,6 +113,8 @@ Readiness reporting should summarize:
 
 Critical or high-risk issues should be escalated promptly to the designated security or management owner. The escalation and decision should be documented.
 
+Do not count the initialization placeholder as a finding in metrics or management reporting.
+
 ## 8. Relationship to Other Project Artifacts
 
 | Artifact                                         | Relationship                                                              |
@@ -119,8 +125,13 @@ Critical or high-risk issues should be escalated promptly to the designated secu
 | `remediation-tracker.md`                         | Tracks corrective actions associated with confirmed findings.             |
 | Risk register in the third-party risk workstream | Supports linkage to broader business and security risks where applicable. |
 
+Use the identifiers and terminology defined in the relevant source registers. Before recording a cross-reference, confirm that the referenced control, test, evidence item, risk, or remediation action exists and is applicable. Do not create a reference merely to make the register appear complete.
+
 ## 9. Simulation Limitations
 
 This register is part of a fictional portfolio case study. All assessment results and evidence must be synthetic or otherwise clearly authorized for portfolio use.
 
+The absence of confirmed findings in this register does not establish that all controls are effective or that no deficiencies exist. It means only that no findings have been documented as confirmed at the current stage of the simulated assessment.
+
 The work demonstrates a readiness-assessment process. It is not an independent SOC 2 examination, audit opinion, certification, or representation that Northstar Cloud Solutions is SOC 2 compliant.
+
