@@ -134,4 +134,3 @@ This register is part of a fictional portfolio case study. All assessment result
 The absence of confirmed findings in this register does not establish that all controls are effective or that no deficiencies exist. It means only that no findings have been documented as confirmed at the current stage of the simulated assessment.
 
 The work demonstrates a readiness-assessment process. It is not an independent SOC 2 examination, audit opinion, certification, or representation that Northstar Cloud Solutions is SOC 2 compliant.
-
