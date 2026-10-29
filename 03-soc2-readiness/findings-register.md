@@ -58,7 +58,7 @@ If evidence is unavailable, contradictory, incomplete, or outside the assessment
 No findings have been entered at project initialization. Populate this table after control testing and exception evaluation.
 
 | Finding ID | Finding Title | Control ID | Test ID | Exception Type | Severity | Condition and Supporting Evidence | Risk / Impact | Root Cause | Compensating Controls | Owner | Target Date | Status | Remediation Action ID |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | No findings documented yet | — | — | — | — | — | Pending assessment | — | — | — | — | — | Pending testing | — |
 
 Replace the initialization row when actual assessment results are documented. Do not treat it as a finding.
