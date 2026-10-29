@@ -6,7 +6,7 @@
 
 Northstar Cloud Solutions is a fictional SaaS company seeking to improve its security governance, third-party oversight, customer assurance, and SOC 2 readiness.
 
-This report consolidates the current results documented in the third-party risk and SOC 2 readiness workstreams. Its purpose is to highlight priorities, distinguish confirmed simulated findings from evidence gaps, and identify the next steps required to improve the fictional program.
+This report consolidates the current results documented in the third-party risk and SOC 2 readiness workstreams. Its purpose is to highlight priorities, distinguish documented simulated findings from evidence gaps, and identify the next steps required to improve the fictional program.
 
 The existing third-party risk workstream documents three simulated vendor findings:
 
@@ -130,7 +130,7 @@ The finding represents a fictional design weakness, not evidence of an actual di
 
 The SOC 2 readiness workstream covers 15 controls within the Security Trust Services Criterion.
 
-The control matrix identifies the control objectives, ownership, related risks, evidence requests, planned testing, and initial status.
+The control matrix identifies the control objectives, ownership, related risks, evidence requests, planned testing, and current assessment status. Its statuses are aligned with `03-soc2-readiness/assessment-results.md`: six controls are In Progress and nine are Not Tested.
 
 The current assessment records six controls with preliminary synthetic evidence samples:
 
@@ -274,7 +274,7 @@ Do not report untested controls as passing. Do not interpret an empty findings r
 
 This report consolidates the current state of the fictional portfolio. It does not replace the underlying vendor assessment workpapers, risk register, evidence register, SOC 2 control matrix, testing plan, findings register, or remediation trackers.
 
-The next step is to execute and document the planned technical validation procedures. The management report should then be updated to reflect the work actually performed, results observed, evidence reviewed, and any limitations or findings identified.
+The next step is to execute and document the planned technical validation procedures. The management report should then be updated to reflect the work actually performed, results observed, evidence reviewed, and any limitations or findings identified. The technical validation plan is not evidence that tests have been executed.
 
 As additional synthetic evidence and workpapers are created, this report should be revised to reflect supported conclusions, unresolved gaps, and validated remediation status.
 
