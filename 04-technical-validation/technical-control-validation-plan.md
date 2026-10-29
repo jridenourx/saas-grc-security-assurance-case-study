@@ -22,6 +22,8 @@ The exercise will use synthetic configuration summaries, fictional user and role
 
 The project will not connect to a production cloud account, modify real access permissions, collect real customer information, or claim that actual AWS controls have been tested.
 
+The five test procedures below cover related control objectives within these areas. The plan includes user access provisioning and removal, privileged access, MFA, logging and monitoring, and log protection and retention.
+
 ## 3. Assessment Approach
 
 Each control will be evaluated using the following process:
@@ -45,15 +47,35 @@ The following controls reference the existing SOC 2 readiness control matrix in 
 
 | Technical Test ID | Control ID | Control Area                              | Validation Objective                                                                                                            | Existing SOC 2 Evidence References |
 | ----------------- | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| TECH-TST-001      | CTRL-003   | User access provisioning and removal      | Determine whether access requests, role changes, and termination processes are documented and supported by appropriate records. | EVD-005, EVD-006                   |
-| TECH-TST-002      | CTRL-004   | Privileged access and least privilege     | Evaluate whether privileged access is identified, justified, restricted, and reviewed.                                          | EVD-007, EVD-008                   |
-| TECH-TST-003      | CTRL-005   | Multifactor authentication                | Determine whether MFA requirements and configuration evidence cover the defined user population and privileged access paths.    | EVD-009, EVD-010                   |
-| TECH-TST-004      | CTRL-006   | Security logging and monitoring           | Evaluate required logging coverage, representative event generation, and documented monitoring processes.                       | EVD-011, EVD-012                   |
-| TECH-TST-005      | CTRL-007   | Protection and retention of security logs | Evaluate whether access restrictions and retention requirements are defined and supported by configuration evidence.            | EVD-013, EVD-014                   |
+| TECH-TST-001      | CTRL-003   | User access provisioning and removal      | Determine whether access requests, role changes, and termination processes are documented and supported by appropriate records. | SOC2:EVD-005, SOC2:EVD-006         |
+| TECH-TST-002      | CTRL-004   | Privileged access and least privilege     | Evaluate whether privileged access is identified, justified, restricted, and reviewed.                                          | SOC2:EVD-007, SOC2:EVD-008         |
+| TECH-TST-003      | CTRL-005   | Multifactor authentication                | Determine whether MFA requirements and configuration evidence cover the defined user population and privileged access paths.    | SOC2:EVD-009, SOC2:EVD-010         |
+| TECH-TST-004      | CTRL-006   | Security logging and monitoring           | Evaluate required logging coverage, representative event generation, and documented monitoring processes.                       | SOC2:EVD-011, SOC2:EVD-012         |
+| TECH-TST-005      | CTRL-007   | Protection and retention of security logs | Evaluate whether access restrictions and retention requirements are defined and supported by configuration evidence.            | SOC2:EVD-013, SOC2:EVD-014         |
 
 The control and evidence identifiers above belong to the existing SOC 2 readiness workstream. The `TECH-TST` identifiers are specific to this technical validation plan.
 
-The evidence references indicate the existing register entries to consult. They do not mean the requested evidence has been received or the associated tests have been completed.
+### Evidence Reference Convention
+
+Use the following prefixes when referencing evidence across workstreams:
+
+* `SOC2:EVD-###` — Evidence request or sample associated with the SOC 2 readiness workstream.
+* `TPR:EVD-###` — Evidence record associated with the third-party risk workstream.
+
+These prefixes identify the source workstream for reporting and traceability. They do not change the original evidence IDs in the source registers.
+
+The evidence references in the mapping table indicate the existing register entries to consult. They do not mean the requested evidence has been received or the associated tests have been completed.
+
+Before using an evidence reference in a test workpaper:
+
+1. Confirm the evidence ID against the authoritative source register.
+2. Confirm that the evidence description and control mapping match the intended test.
+3. Record the specific artifact actually reviewed.
+4. Distinguish a repository-created synthetic sample from evidence requested from a fictional owner.
+5. Document any missing information or limitations.
+6. Avoid treating a planned evidence request as evidence reviewed.
+
+The SOC 2 evidence request register remains the authoritative source for SOC 2 request status. The third-party risk evidence register remains the authoritative source for vendor evidence status.
 
 ## 5. Test Procedures
 
@@ -233,23 +255,23 @@ An exception identified during testing is not automatically a confirmed finding.
 
 Create one workpaper for each test performed.
 
-| Field                 | Required Information                                    |
-| --------------------- | ------------------------------------------------------- |
-| Technical Test ID     | Unique test identifier from this plan                   |
-| Control ID            | Related control in the SOC 2 readiness matrix           |
-| Test Objective        | What the procedure is intended to evaluate              |
-| Scope and Population  | Systems, users, records, and period represented         |
-| Criteria              | Requirement or expected result                          |
-| Evidence Reviewed     | Evidence IDs and artifact descriptions                  |
-| Procedure Performed   | Steps actually completed                                |
-| Observed Result       | What the evidence demonstrated                          |
-| Limitations           | Missing information, scope restrictions, or uncertainty |
-| Test Conclusion       | Result category and supporting rationale                |
-| Finding Required      | Yes, No, or Pending Evaluation                          |
-| Finding ID            | Existing finding identifier, if applicable              |
-| Remediation Action ID | Existing action identifier, if applicable               |
-| Reviewer              | Fictional role or reviewer designation                  |
-| Review Date           | Fictional date for the simulated exercise               |
+| Field                 | Required Information                                                               |
+| --------------------- | ---------------------------------------------------------------------------------- |
+| Technical Test ID     | Unique test identifier from this plan                                              |
+| Control ID            | Related control in the SOC 2 readiness matrix                                      |
+| Test Objective        | What the procedure is intended to evaluate                                         |
+| Scope and Population  | Systems, users, records, and period represented                                    |
+| Criteria              | Requirement or expected result                                                     |
+| Evidence Reviewed     | Evidence IDs and artifact descriptions, including workstream prefixes where needed |
+| Procedure Performed   | Steps actually completed                                                           |
+| Observed Result       | What the evidence demonstrated                                                     |
+| Limitations           | Missing information, scope restrictions, or uncertainty                            |
+| Test Conclusion       | Result category and supporting rationale                                           |
+| Finding Required      | Yes, No, or Pending Evaluation                                                     |
+| Finding ID            | Existing finding identifier, if applicable                                         |
+| Remediation Action ID | Existing action identifier, if applicable                                          |
+| Reviewer              | Fictional role or reviewer designation                                             |
+| Review Date           | Fictional date for the simulated exercise                                          |
 
 Do not record a procedure as completed unless the corresponding steps have actually been documented in the simulation.
 
@@ -269,6 +291,8 @@ If a test supports a potential control deficiency:
 
 Third-party vendor findings must remain in the third-party risk register. SOC 2 readiness findings must remain in the SOC 2 findings register. Cross-workstream reports should identify the workstream when referencing a record.
 
+If a technical test relates to a vendor-provided service, do not automatically attribute a vendor finding to the SOC 2 control. Evaluate the control requirement, evidence, scope, and responsibility allocation before documenting a separate control deficiency.
+
 ## 9. Reporting
 
 Technical validation reporting should summarize:
@@ -283,8 +307,17 @@ Technical validation reporting should summarize:
 
 Do not describe a control as effective solely because a synthetic example exists. Conclusions must be supported by the documented procedure and the evidence available for that procedure.
 
+When reporting results, preserve the distinction between:
+
+* A planned test and a completed test.
+* A synthetic sample and evidence from a real operating environment.
+* An evidence gap and a confirmed control deficiency.
+* A potential exception and a confirmed finding.
+* A vendor finding and a SOC 2 readiness finding.
+
 ## 10. Simulation Disclaimer
 
 This plan is a fictional learning artifact. All test records and technical evidence created for the exercise must be labeled as synthetic.
 
 The plan does not represent a real penetration test, production cloud assessment, independent audit, or certification. It demonstrates a structured approach to control validation and GRC evidence management.
+
