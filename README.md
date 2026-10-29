@@ -1,49 +1,49 @@
-# SaaS Security Compliance, Customer Assurance & Third-Party Risk
+# SaaS GRC and Security Assurance Case Study
 
 ## Project Overview
 
 This repository documents a simulated Governance, Risk, and Compliance (GRC) program for Northstar Cloud Solutions, a fictional business-to-business software-as-a-service (SaaS) company hosted on Amazon Web Services (AWS).
 
-The case study demonstrates how a GRC practitioner can structure third-party risk assessments, manage customer security questionnaires, evaluate SOC 2 readiness, document control testing, and connect risks with evidence and remediation activities.
+The case study demonstrates how a GRC practitioner can structure third-party risk assessments, manage customer security questionnaires, evaluate SOC 2 readiness, plan technical control validation, track findings and remediation, and communicate risk through management reporting.
 
 The project emphasizes risk-based decision-making, evidence traceability, consistent documentation, and transparent assessment limitations.
+
+**Project status:** Portfolio case study with documented assessment methodology, preliminary simulated results, and planned technical testing procedures.
+
+**Evidence classification:** Fictional scenario information and synthetic evidence.
 
 ## Business Scenario
 
 Northstar Cloud Solutions is a fictional SaaS company preparing to strengthen its security and compliance program in response to customer assurance requirements.
 
-The company relies on external service providers, processes customer business data, and operates cloud-hosted systems. Its security processes require more consistent evidence collection, vendor oversight, control documentation, and remediation tracking.
+The company relies on external service providers, processes customer business data, and operates cloud-hosted systems. Its security processes require consistent evidence collection, vendor oversight, control documentation, and remediation tracking.
 
 This case study develops a structured approach to those challenges using fictional company information and synthetic assessment artifacts.
+
+### Vendors in Scope
+
+| Vendor                  | Service                   | Preliminary Inherent Risk Tier |
+| ----------------------- | ------------------------- | ------------------------------ |
+| Northstar Cloud Hosting | Cloud infrastructure      | High                           |
+| SignalBridge Support    | Customer support platform | Moderate                       |
+| MetricForge Analytics   | Product analytics         | Moderate                       |
+
+The ratings use the project's documented weighted inherent-risk methodology. They are scenario-based estimates and are not independently verified assessments of real vendors.
 
 ## Project Objectives
 
 * Establish a risk-based third-party risk management process.
 * Develop a repeatable approach to customer security questionnaires and evidence-backed responses.
-* Assess readiness against selected SOC 2 Trust Services Criteria.
-* Document control objectives, evidence requests, planned testing procedures, and preliminary assessment results.
-* Evaluate selected technical controls related to identity and access management, multifactor authentication, and security logging.
+* Assess readiness against selected SOC 2 security control areas.
+* Document control objectives, evidence requests, planned testing procedures, and preliminary assessment statuses.
+* Define technical validation procedures for selected identity and access management, multifactor authentication, and logging controls.
 * Connect risks, controls, evidence, findings, and remediation activities.
-* Produce management-oriented reporting and professional portfolio documentation.
+* Produce management-oriented reporting and portfolio documentation.
 * Demonstrate the ability to document assessment methodology, evaluate evidence limitations, and communicate security risks.
-
-## Project Workstreams
-
-| Workstream                         | Focus                                                                                                                 | Repository Location                                                 |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Third-Party Risk Management        | Vendor inventory, inherent risk scoring, due diligence, evidence review, risk tracking, and remediation               | `01-third-party-risk/`                                              |
-| Customer Security Assurance        | Security questionnaires, response library, evidence mapping, and review and approval procedures                       | `02-customer-assurance/`                                            |
-| SOC 2 Readiness                    | Scope definition, control matrix, evidence requests, testing procedures, assessment results, and remediation tracking | `03-soc2-readiness/`                                                |
-| Technical Control Validation       | Planned and simulated validation of selected IAM, MFA, and security logging controls                                  | Planned workstream: `04-technical-validation/`                      |
-| Management Reporting and Portfolio | Consolidated risk reporting, management summary, final case study, and lessons learned                                | Planned workstreams: `05-management-reporting/` and `06-portfolio/` |
-
-The first three workstreams contain the principal assessment documentation. Technical validation and consolidated portfolio reporting are separate planned deliverables and should not be considered complete until their corresponding artifacts have been created and reviewed.
 
 ## Repository Navigation
 
-### Project Documentation
-
-The `docs/` directory contains the foundational documents for the case study.
+### 1. Project Documentation — `docs/`
 
 | File                            | Purpose                                                                                                                                  |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -52,89 +52,118 @@ The `docs/` directory contains the foundational documents for the case study.
 | `docs/scope-and-assumptions.md` | Documents scope boundaries, assumptions, exclusions, and limitations.                                                                    |
 | `docs/methodology.md`           | Defines risk scoring, evidence evaluation, assessment conclusions, finding severity, remediation management, and identifier conventions. |
 
-### Third-Party Risk Management
+### 2. Third-Party Risk Management — `01-third-party-risk/`
 
-The `01-third-party-risk/` directory contains the vendor risk management workstream.
+This workstream evaluates three fictional vendors using a consistent inherent-risk methodology and documents due diligence, evidence follow-up, findings, and remediation expectations.
 
-Key artifacts include:
+Key artifacts:
 
-* Vendor inventory and service descriptions.
-* Vendor due diligence questionnaire.
-* Vendor risk assessment matrix.
-* Synthetic vendor assessment records.
-* Vendor assessment workpapers.
-* Evidence register.
-* Risk register.
-* Findings and remediation tracker.
-* Vendor lifecycle procedure.
-* Vendor risk summary.
+* `01-third-party-risk/vendor-inventory.md`
+* `01-third-party-risk/vendor-due-diligence-questionnaire.md`
+* `01-third-party-risk/vendor-risk-assessment-matrix.md`
+* `01-third-party-risk/synthetic-vendor-assessments.md`
+* `01-third-party-risk/vendor-assessment-workpapers.md`
+* `01-third-party-risk/evidence-register.md`
+* `01-third-party-risk/risk-register.md`
+* `01-third-party-risk/findings-remediation-tracker.md`
+* `01-third-party-risk/vendor-lifecycle-procedure.md`
+* `01-third-party-risk/vendor-risk-summary.md`
 
-### Customer Security Assurance
+The simulated vendor assessment records three documented findings: two associated with SignalBridge Support and one associated with MetricForge Analytics. Evidence follow-up items are tracked separately where the available information does not establish a control deficiency.
 
-The `02-customer-assurance/` directory contains the customer questionnaire workstream.
+### 3. Customer Security Assurance — `02-customer-assurance/`
 
-Key artifacts include:
+This workstream demonstrates a repeatable approach to receiving, reviewing, and responding to customer security questionnaires.
 
-* Customer security questionnaire.
-* Security questionnaire response library.
-* Sample completed customer questionnaire.
-* Questionnaire review procedure.
+Key artifacts:
 
-These artifacts demonstrate how customer security responses can be standardized, reviewed, and linked to supporting evidence while distinguishing verified information from assumptions and evidence gaps.
+* `02-customer-assurance/customer-security-questionnaire.md`
+* `02-customer-assurance/security-questionnaire-response-library.md`
+* `02-customer-assurance/sample-customer-questionnaire.md`
+* `02-customer-assurance/questionnaire-review-procedure.md`
 
-### SOC 2 Readiness
+These documents demonstrate how responses can be standardized, reviewed, and linked to supporting evidence while distinguishing verified information from assumptions and evidence gaps.
 
-The `03-soc2-readiness/` directory contains the SOC 2 readiness workstream.
+### 4. SOC 2 Readiness — `03-soc2-readiness/`
 
-Key artifacts include:
+This workstream organizes a simulated readiness assessment around 15 security control areas.
 
-* Readiness scope.
-* Control matrix.
-* Evidence request register.
-* Control testing plan.
-* Synthetic evidence samples.
-* Assessment results.
-* Findings register.
-* Remediation tracker.
+Key artifacts:
 
-The workstream focuses on the Security Trust Services Criterion and is intended to demonstrate readiness assessment and evidence management. It is not an independent SOC 2 examination.
+* `03-soc2-readiness/readiness-scope.md`
+* `03-soc2-readiness/control-matrix.md`
+* `03-soc2-readiness/evidence-request-register.md`
+* `03-soc2-readiness/control-testing-plan.md`
+* `03-soc2-readiness/evidence-samples.md`
+* `03-soc2-readiness/assessment-results.md`
+* `03-soc2-readiness/findings-register.md`
+* `03-soc2-readiness/remediation-tracker.md`
 
-### Planned Technical Validation
+**Current assessment status:** Six controls are marked In Progress because preliminary synthetic evidence samples have been drafted. Nine controls remain Not Tested.
 
-The planned `04-technical-validation/` directory will document selected technical control validation activities.
+In Progress does not mean a control has passed testing. The SOC 2 findings register currently contains no confirmed findings based on the preliminary samples, and the SOC 2 remediation tracker has no documented actions.
 
-The intended focus includes:
+These statuses describe the state of this simulated exercise. They do not establish that the fictional environment has no deficiencies or that it would pass a SOC 2 examination.
 
-* Identity and access management.
-* Least privilege and privileged access.
+### 5. Technical Control Validation — `04-technical-validation/`
+
+This workstream defines planned procedures for examining selected technical controls.
+
+Key artifact:
+
+* `04-technical-validation/technical-control-validation-plan.md`
+
+The plan covers:
+
+* User access provisioning and removal.
+* Privileged access and least privilege.
 * Multifactor authentication.
 * Security logging and monitoring.
-* Evidence review and test limitations.
-* Links between technical observations, controls, risks, and remediation actions.
+* Log protection and retention.
 
-Any technical evidence created for this workstream will be synthetic and clearly labeled. No real AWS production environment or customer system is represented as having been tested.
+Each planned test includes an objective, procedures, evidence requirements, expected results, and potential exceptions.
 
-### Planned Management Reporting and Portfolio
+**Execution status:** The repository contains a validation plan. It does not claim that production systems were tested or that the planned procedures have been completed.
 
-The planned `05-management-reporting/` directory will provide a consolidated view of the case study, including risk priorities, evidence gaps, assessment status, findings, and remediation.
+### 6. Management Reporting — `05-management-reporting/`
 
-The planned `06-portfolio/` directory will contain a final case study summary, methodology overview, and lessons learned.
+This workstream consolidates risk and readiness information for a management audience.
 
-These directories should be treated as planned deliverables until their contents are added.
+Key artifact:
 
-### Framework References
+* `05-management-reporting/consolidated-grc-management-report.md`
 
-The `references/` directory contains the framework reference register and supporting references used to inform the assessment methodology.
+The report summarizes vendor risk ratings, documented vendor findings, evidence follow-up items, SOC 2 assessment statuses, recommended priorities, and reporting limitations.
+
+Workstream prefixes are used where necessary to distinguish records that share similar identifier patterns across separate registers.
+
+### 7. Portfolio Materials — `06-portfolio/`
+
+This workstream presents the project in a format suitable for portfolio review and interview preparation.
+
+| File                                  | Purpose                                                                                           |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `06-portfolio/case-study.md`          | Summarizes the business scenario, methodology, workstreams, findings, and limitations.            |
+| `06-portfolio/lessons-learned.md`     | Documents lessons about risk scoring, evidence quality, traceability, remediation, and reporting. |
+| `06-portfolio/project-walkthrough.md` | Provides a guided repository walkthrough and interview talking points.                            |
+
+These documents are designed to help recruiters and hiring managers understand the project without having to read every workpaper.
+
+### 8. Framework References — `references/`
+
+* `references/framework-reference-register.md`
+
+This register documents the framework references used to inform the simulated assessment methodology.
 
 Frameworks and guidance are applied selectively according to the scope and relevance of each workstream.
 
-## Methodology
+## Methodology and Evidence Governance
 
-The case study uses documented assessment criteria, synthetic evidence, consistent identifiers, and traceable findings.
+The project uses documented assessment criteria, synthetic evidence, consistent identifiers, and traceable findings.
 
 The assessment process distinguishes among:
 
-* Preliminary risk estimates.
+* Preliminary inherent-risk estimates.
 * Evidence requests and evidence gaps.
 * Planned testing procedures.
 * Preliminary observations.
@@ -142,24 +171,59 @@ The assessment process distinguishes among:
 * Findings requiring remediation.
 * Risks requiring acceptance or further review.
 
-Risk ratings and conclusions should be supported by documented rationale and relevant evidence. Missing evidence is not automatically proof of a control failure, and an unverified control must not be described as effective.
+Key principles include:
 
-Cross-workstream reporting must identify the workstream associated with each record so that similar identifiers in different registers are not confused.
+1. **Use documented scoring criteria.** Risk ratings should be based on defined factors and a consistent methodology.
+2. **Distinguish inherent risk from control effectiveness.** A high inherent-risk rating does not automatically establish a control failure.
+3. **Treat evidence gaps carefully.** Missing evidence is not automatically proof that a control failed.
+4. **Preserve traceability.** Risks, controls, evidence, findings, and remediation actions should be linked where applicable.
+5. **Represent testing status accurately.** Planned procedures must not be described as completed tests.
+6. **Require support for conclusions.** Assessment conclusions should be consistent with the procedures performed and the evidence available.
+7. **Document limitations.** Unverified information and unresolved questions should remain visible in reporting.
 
 ## Scope and Limitations
 
-This is an independent, simulated portfolio case study. Northstar Cloud Solutions, its vendors, customers, users, configurations, records, and evidence are fictional or synthetic.
+This is a simulated portfolio case study. Northstar Cloud Solutions, its vendors, customers, users, configurations, records, and evidence are fictional or synthetic.
 
 The project does not represent:
 
 * A real client engagement.
 * A production-system assessment.
 * An independent audit.
+* Completed production technical testing.
 * A completed SOC 2 examination.
 * A SOC 2 report or certification.
 * Verified security assurance for any real vendor.
 
 Conclusions apply only to the defined fictional scenario and the evidence created for the exercise. Synthetic examples demonstrate assessment methods; they do not establish that real-world controls operate effectively.
+
+## Skills Demonstrated
+
+This project is intended to demonstrate practical exposure to:
+
+* Third-party risk management.
+* Inherent-risk scoring and risk classification.
+* Evidence collection and tracking.
+* Security questionnaire review.
+* SOC 2 readiness documentation.
+* Control mapping and test planning.
+* Findings and remediation tracking.
+* Management reporting.
+* Cross-workstream traceability.
+* Procedure and process documentation.
+* Communicating assessment limitations and security risks.
+
+## Recommended Starting Points
+
+**For recruiters and hiring managers:** Start with `06-portfolio/case-study.md`.
+
+**For GRC and IT audit reviewers:** Review `01-third-party-risk/vendor-risk-assessment-matrix.md`, `03-soc2-readiness/control-matrix.md`, and `03-soc2-readiness/assessment-results.md`.
+
+**For technical control validation:** Review `04-technical-validation/technical-control-validation-plan.md`.
+
+**For management reporting:** Review `05-management-reporting/consolidated-grc-management-report.md`.
+
+**For interview preparation:** Review `06-portfolio/project-walkthrough.md`.
 
 ## Simulation Disclaimer
 
