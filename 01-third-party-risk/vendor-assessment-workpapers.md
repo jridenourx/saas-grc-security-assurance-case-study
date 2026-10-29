@@ -158,32 +158,35 @@ This rating does not establish that the provider has a control weakness.
 
 **Preliminary inherent-risk tier:** Moderate
 
-**Assessment status:** Planned
+**Assessment status:** Simulated desk review completed; technical and operational validation pending
 
 **Assessment objective:** Evaluate customer data exposure, support-user permissions, data lifecycle controls, subprocessors, and incident notification arrangements.
 
-#### Planned Procedures
+#### Procedures and Follow-up
 
-| Procedure ID | Procedure                                                                                                   | Evidence Reference | Expected Assessment Output                                                                      |
-| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------------------- |
-| WP-002-P01   | Review the documented data flows and determine which customer information the support platform may process. | EVD-005            | Document the assumed and evidenced data exposure.                                               |
-| WP-002-P02   | Evaluate user roles, permissions, and access-review evidence.                                               | EVD-006            | Identify whether the available evidence supports least-privilege and access-review conclusions. |
-| WP-002-P03   | Review retention, deletion, and subprocessor documentation.                                                 | EVD-007            | Document data lifecycle and external-sharing considerations.                                    |
-| WP-002-P04   | Review incident response and customer notification documentation.                                           | EVD-008            | Evaluate documented responsibilities and notification arrangements.                             |
+| Procedure ID | Procedure                                                                                                   | Evidence Reference | Status and Expected Output                                                                                                  |
+| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| WP-002-P01   | Review the documented data flows and determine which customer information the support platform may process. | EVD-005            | Simulated desk review documented; validate the design and actual data-flow assumptions before drawing stronger conclusions. |
+| WP-002-P02   | Evaluate user roles, permissions, and access-review evidence.                                               | EVD-006            | Simulated desk review documented; actual assignments and operating effectiveness remain unverified.                         |
+| WP-002-P03   | Review retention, deletion, and subprocessor documentation.                                                 | EVD-007            | Planned; document data lifecycle and external-sharing considerations when evidence becomes available.                       |
+| WP-002-P04   | Review incident response and customer notification documentation.                                           | EVD-008            | Planned; evaluate documented responsibilities and notification arrangements when evidence becomes available.                |
 
-#### Initial Assessment Notes
+#### Simulated Desk Review Results
 
-The initial scenario assumes that support personnel may access customer account information and support records.
+The fictional data-flow and role-permission artifacts described in `synthetic-vendor-assessments.md` were reviewed as part of this portfolio simulation. The scenario supports two design-level observations recorded as FND-001 and FND-002:
 
-The extent of access, appropriateness of permissions, and effectiveness of safeguards have not yet been established.
+* The support workflow exposes more customer information than the stated support purpose requires.
+* The documented support-role permissions exceed the stated business need.
+
+These are simulated design weaknesses, not findings from a real vendor assessment. The scenario artifacts do not establish actual vendor configuration, real customer-data exposure, unauthorized access, or operating effectiveness. The related corrective actions remain open.
 
 #### Conclusion
 
-**Final assessment conclusion:** Pending evidence review.
+**Simulated assessment conclusion:** Two design-level findings are documented within the fictional scenario; technical and operational validation remains pending.
 
-**Risk-tier decision:** Reassess after due diligence and evidence review.
+**Risk-tier decision:** The preliminary inherent-risk tier remains Moderate. Reassess residual risk only after relevant evidence and remediation validation are documented.
 
-**Required follow-up:** Validate data exposure, evaluate access permissions, and document any evidence gaps or supported control weaknesses.
+**Required follow-up:** Validate the data flow and role permissions, complete subprocessor oversight review, and review synthetic remediation evidence against the documented closure criteria.
 
 ---
 
@@ -195,32 +198,32 @@ The extent of access, appropriateness of permissions, and effectiveness of safeg
 
 **Preliminary inherent-risk tier:** Moderate
 
-**Assessment status:** Planned
+**Assessment status:** Simulated desk review completed; technical and operational validation pending
 
 **Assessment objective:** Evaluate analytics data flows, integration permissions, data minimization, retention, external sharing, and relevant security monitoring.
 
-#### Planned Procedures
+#### Procedures and Follow-up
 
-| Procedure ID | Procedure                                                        | Evidence Reference | Expected Assessment Output                                                                                |
-| ------------ | ---------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
-| WP-003-P01   | Review the analytics event schema and documented data flows.     | EVD-009            | Determine what information is intended to be transmitted and identify unresolved data exposure questions. |
-| WP-003-P02   | Review integration permissions and authentication documentation. | EVD-010            | Evaluate the documented access model and identify necessary technical validation.                         |
-| WP-003-P03   | Review retention, deletion, and external-sharing documentation.  | EVD-011            | Document the expected data lifecycle and relevant limitations.                                            |
-| WP-003-P04   | Review security logging and incident response documentation.     | EVD-012            | Evaluate available documentation and identify outstanding evidence needs.                                 |
+| Procedure ID | Procedure                                                        | Evidence Reference | Status and Expected Output                                                                                           |
+| ------------ | ---------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| WP-003-P01   | Review the analytics event schema and documented data flows.     | EVD-009            | Simulated desk review documented; validate the design and data-flow assumptions before drawing stronger conclusions. |
+| WP-003-P02   | Review integration permissions and authentication documentation. | EVD-010            | Planned; evaluate the documented access model and identify necessary technical validation.                           |
+| WP-003-P03   | Review retention, deletion, and external-sharing documentation.  | EVD-011            | Planned; document the expected data lifecycle and relevant limitations when evidence becomes available.              |
+| WP-003-P04   | Review security logging and incident response documentation.     | EVD-012            | Planned; evaluate available documentation and identify outstanding evidence needs.                                   |
 
-#### Initial Assessment Notes
+#### Simulated Desk Review Results
 
-The scenario assumes that the analytics service supports product improvement rather than core service delivery.
+The fictional analytics event schema described in `synthetic-vendor-assessments.md` was reviewed as part of this portfolio simulation. The scenario supports FND-003: the documented event schema permits unnecessary free-text data that is not required by the stated analytics purpose.
 
-The data transmitted through the integration, the permissions granted, and the service's actual dependency level require validation.
+This is a simulated design weakness, not evidence that real customer information was transmitted to an actual analytics service. Integration permissions and the complete data lifecycle remain evidence gaps, and technical validation has not been completed.
 
 #### Conclusion
 
-**Final assessment conclusion:** Pending evidence review.
+**Simulated assessment conclusion:** One design-level finding is documented within the fictional scenario; integration permissions and data lifecycle coverage remain unresolved.
 
-**Risk-tier decision:** Reassess after due diligence and evidence review.
+**Risk-tier decision:** The preliminary inherent-risk tier remains Moderate. Reassess residual risk after evidence review and any remediation validation.
 
-**Required follow-up:** Validate the data flow and permissions, evaluate the relevant evidence, and revise the preliminary risk assessment if necessary.
+**Required follow-up:** Remove the unnecessary free-text field in the fictional design, validate the revised schema with synthetic data, review integration permissions, and evaluate retention, deletion, and external-sharing evidence.
 
 ## 5. Assessment Review Checklist
 
@@ -264,11 +267,11 @@ Use this template when recording a completed or updated vendor assessment.
 
 ## 7. Limitations
 
-The procedures in this document are planned assessment procedures. They must not be represented as completed tests until the corresponding work has actually been performed within the simulation.
+The procedures in this document include planned assessment procedures and documented simulated desk-review activities. A planned procedure must not be represented as completed until the corresponding work has actually been performed within the simulation and documented.
 
-The workpapers do not establish that any vendor has passed or failed an assessment.
+The simulated desk-review conclusions for SignalBridge Support and MetricForge Analytics are limited to the fictional artifacts described in this repository. They do not establish actual vendor configurations, operating effectiveness, real customer-data exposure, or the occurrence of a real incident.
 
-All results must be supported by the documented evidence, assessment criteria, and limitations.
+All conclusions must be supported by documented evidence, assessment criteria, and explicit limitations.
 
 ## 8. Simulation Disclaimer
 
