@@ -25,12 +25,12 @@ These results must remain separate. The vendor findings are documented outcomes 
 2. Correct the simulated MetricForge Analytics data-minimization weakness.
 3. Obtain and evaluate outstanding evidence for material vendor risks.
 4. Complete SOC 2 readiness testing using the defined control-testing plan.
-5. Establish technical validation workpapers for selected access, MFA, and logging controls.
+5. Execute and document technical validation procedures for selected access, MFA, and logging controls.
 6. Improve traceability between evidence, findings, remediation actions, and management decisions.
 
 ## 2. Assessment Scope
 
-This report consolidates information from the following existing artifacts:
+This report consolidates information from the following existing artifacts.
 
 ### Third-Party Risk Management
 
@@ -54,7 +54,7 @@ This report consolidates information from the following existing artifacts:
 
 Customer security assurance is part of the broader project, but its questionnaire responses are not independently assessed in this report.
 
-Technical control validation is a planned complementary workstream. The presence of a validation plan does not mean that technical tests have been completed.
+The technical control validation plan has been documented as a complementary workstream. Execution of the planned technical tests remains incomplete, and no testing conclusions should be inferred from the existence of the plan.
 
 ## 3. Third-Party Risk Overview
 
@@ -141,9 +141,9 @@ The current assessment records six controls with preliminary synthetic evidence 
 * CTRL-012 — Change Management.
 * CTRL-014 — Third-Party Risk Management.
 
-These controls are marked In Progress in the assessment results. That status reflects preliminary evidence preparation and evaluation, not completion of every planned testing procedure.
+These controls are marked **In Progress** in the assessment results. That status reflects preliminary evidence preparation and evaluation, not completion of every planned testing procedure.
 
-The remaining nine controls are marked Not Tested.
+The remaining nine controls are marked **Not Tested**.
 
 ### 4.1 Assessment Status
 
@@ -185,16 +185,16 @@ Any conclusions must remain limited to the documented fictional scope, procedure
 
 The following table summarizes the main items requiring management attention.
 
-| Priority            | Workstream       | Record Reference                                                                             | Issue or Exposure                                                                                    | Recommended Next Step                                                       |
-| ------------------- | ---------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| High                | Third-Party Risk | TPR:FND-001                                                                                  | Excessive customer information exposed in a support workflow                                         | Define minimum required fields and validate the revised workflow.           |
-| High                | Third-Party Risk | TPR:FND-002                                                                                  | Support-role permissions exceed documented business need                                             | Review role permissions and validate least-privilege changes.               |
-| High                | Third-Party Risk | TPR:RSK-002 and TPR:RSK-003                                                                  | Hosting-related privileged-access, logging, and recovery evidence gaps                               | Obtain and review relevant evidence before determining residual risk.       |
-| Moderate            | Third-Party Risk | TPR:FND-003                                                                                  | Analytics event schema permits unnecessary free-text data                                            | Remove unnecessary fields and validate the revised schema.                  |
-| Moderate            | Third-Party Risk | TPR:FUP-004                                                                                  | Subprocessor oversight is not fully demonstrated                                                     | Reconcile the vendor's subprocessor inventory with applicable requirements. |
-| Assessment priority | SOC 2 Readiness  | SOC2:CTRL-004 through SOC2:CTRL-006                                                          | Preliminary access, MFA, and logging samples require evaluation against test procedures              | Complete evidence review and document test results.                         |
-| Assessment priority | SOC 2 Readiness  | SOC2:CTRL-008, SOC2:CTRL-012, SOC2:CTRL-014                                                  | Preliminary incident response, change management, and vendor risk samples require further evaluation | Complete testing and determine whether additional evidence is required.     |
-| Assessment priority | SOC 2 Readiness  | SOC2:CTRL-001 through SOC2:CTRL-003, CTRL-007, CTRL-009 through CTRL-011, CTRL-013, CTRL-015 | Controls remain marked Not Tested                                                                    | Schedule and document the planned control assessments.                      |
+| Priority            | Workstream       | Record Reference                                                                      | Issue or Exposure                                                                                    | Recommended Next Step                                                       |
+| ------------------- | ---------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| High                | Third-Party Risk | `TPR:FND-001`                                                                         | Excessive customer information exposed in a support workflow                                         | Define minimum required fields and validate the revised workflow.           |
+| High                | Third-Party Risk | `TPR:FND-002`                                                                         | Support-role permissions exceed documented business need                                             | Review role permissions and validate least-privilege changes.               |
+| High                | Third-Party Risk | `TPR:RSK-002` and `TPR:RSK-003`                                                       | Hosting-related privileged-access, logging, and recovery evidence gaps                               | Obtain and review relevant evidence before determining residual risk.       |
+| Moderate            | Third-Party Risk | `TPR:FND-003`                                                                         | Analytics event schema permits unnecessary free-text data                                            | Remove unnecessary fields and validate the revised schema.                  |
+| Moderate            | Third-Party Risk | `TPR:FUP-004`                                                                         | Subprocessor oversight is not fully demonstrated                                                     | Reconcile the vendor's subprocessor inventory with applicable requirements. |
+| Assessment priority | SOC 2 Readiness  | `SOC2:CTRL-004` through `SOC2:CTRL-006`                                               | Preliminary access, MFA, and logging samples require evaluation against test procedures              | Complete evidence review and document test results.                         |
+| Assessment priority | SOC 2 Readiness  | `SOC2:CTRL-008`, `SOC2:CTRL-012`, `SOC2:CTRL-014`                                     | Preliminary incident response, change management, and vendor risk samples require further evaluation | Complete testing and determine whether additional evidence is required.     |
+| Assessment priority | SOC 2 Readiness  | `SOC2:CTRL-001`–`CTRL-003`, `CTRL-007`, `CTRL-009`–`CTRL-011`, `CTRL-013`, `CTRL-015` | Controls remain marked Not Tested                                                                    | Schedule and document the planned control assessments.                      |
 
 **Identifier notation:** The `TPR:` and `SOC2:` labels indicate the workstream containing the referenced record. They are reporting labels only; they do not change the identifiers in the source registers.
 
@@ -243,7 +243,7 @@ These are recommended decisions for the simulated company, not records of actual
 
 ## 8. Reporting Metrics
 
-The following metrics are recommended for future management reporting:
+The following metrics are recommended for future management reporting.
 
 ### Third-Party Risk Metrics
 
@@ -274,8 +274,9 @@ Do not report untested controls as passing. Do not interpret an empty findings r
 
 This report consolidates the current state of the fictional portfolio. It does not replace the underlying vendor assessment workpapers, risk register, evidence register, SOC 2 control matrix, testing plan, findings register, or remediation trackers.
 
-The next step is to complete the technical validation workstream and then update the management report using the results actually documented in the project.
+The next step is to execute and document the planned technical validation procedures. The management report should then be updated to reflect the work actually performed, results observed, evidence reviewed, and any limitations or findings identified.
 
 As additional synthetic evidence and workpapers are created, this report should be revised to reflect supported conclusions, unresolved gaps, and validated remediation status.
 
 All names, records, results, and decisions are fictional or illustrative. This report does not represent a real audit, an independent SOC 2 examination, or verified security assurance for any real organization.
+
